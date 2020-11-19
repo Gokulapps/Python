@@ -6,6 +6,7 @@ def nearest_palindrome(number):
             digit = temp % 10
             temp = temp // 10
             rev = rev * 10 + digit
+        print(rev)
         if (rev == number):
             break
         else:
@@ -13,5 +14,5 @@ def nearest_palindrome(number):
     return rev
 
 
-number = 100
+number = 9
 print("The Nearesr Palindrome is:",nearest_palindrome(number+1))
